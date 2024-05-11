@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio - Mahesh Chandra N C</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/fe1997c335.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div id="header">
+        <div class="container">
+          <nav>
+            <img src="./images/logo.png" alt="logo" class="logo" />
+            <ul id="sidemenu">
+              <li><a href="#header">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+          </nav>
+          <div class="header-text">
+            <p>Web Developer Enthusiast</p>
+            <h1>
+              Hi, I'm Mahesh Chandra <br />
+              <span>N C</span> from Bengaluru
+            </h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-------------------------about---------------------->
+    <main>
+      <section>
+        <div id="about">
+          <div class="container">
+            <div class="row">
+              <div class="about-col-1">
+                <img src="images/user.png" alt="user-image" />
+              </div>
+              <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>
+                  Hello! I'm a passionate web developer graduated in B.Tech/B.E.
+                  in Computer Science and Engineering from Presidency
+                  University, Bengaluru, seeking reliable knowledge on languages
+                  that would serve as viable on my domain such as Core Java,
+                  Spring Boot, MySQL, Web Technology, JDBC, JavaScript, ReactJS.
+                </p>
+
+                <div class="tab-titles">
+                  <p class="tab-links active-link" onclick="opentab('skills')">
+                    Skills
+                  </p>
+                  <p class="tab-links" onclick="opentab('experience')">
+                    Experience
+                  </p>
+                  <p class="tab-links" onclick="opentab('education')">
+                    Education
+                  </p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                  <ul>
+                    <li><span>HTML</span><br /></li>
+                    <li><span>CSS</span><br /></li>
+                    <li><span>JavaScript</span><br /></li>
+                    <li><span>ReactJS</span><br /></li>
+                    <li><span>Java</span><br /></li>
+                    <li><span>SQL</span><br /></li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                  <ul>
+                    <li>
+                      <span>2023 - Current</span><br />Self learning/Open source
+                      contribution
+                    </li>
+                    <li>
+                      <span>2022 - 2023</span><br />Jspiders training - Full
+                      Stack Development
+                    </li>
+                  </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                  <ul>
+                    <li>
+                      <span>2018 - 2022</span><br />B.Tech in CSE at Presidency
+                      University
+                    </li>
+                    <li>
+                      <span>2016 - 2018</span><br />Class 12 - Narayana PU
+                      College
+                    </li>
+                    <li>
+                      <span>2010 - 2016</span><br />Class 10 - Bhoruka English
+                      School
+                    </li>
+                    <li>Bengaluru</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------skills---------------------->
+      <section>
+        <div id="skills">
+          <div class="container">
+            <h1 class="sub-title">My <span>Skills</span></h1>
+            <p>(areas of expertise)</p>
+            <div class="skills-list">
+              <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>
+                  Web design combines artistic creativity with technical
+                  expertise to craft compelling and effective websites that
+                  deliver engaging user experiences and drive business success.
+                  A well-designed website not only looks visually appealing but
+                  also functions seamlessly to meet the needs and expectations
+                  of its users.
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>UX/UI Design</h2>
+                <p>
+                  Focused on the overall experience and usability of a product,
+                  while UI design focuses on the visual presentation and
+                  interface elements. Effective collaboration between UX and UI
+                  designers is essential to create successful and impactful
+                  digital products that resonate with users.
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-infinity"></i>
+                <h2>DevOps</h2>
+                <p>
+                  DevOps is a cultural and technical approach that aims to break
+                  down silos between development and operations teams, enabling
+                  faster and more efficient software delivery, improved quality,
+                  and better alignment with business objectives.
+                </p>
+                <a href="#">Learn more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------portfolio---------------------->
+
+      <section>
+        <div id="portfolio">
+          <div class="container">
+            <h1 class="sub-title">My <span>Work</span></h1>
+            <div class="work-list">
+              <div class="work">
+                <img src="images/work-1.png" alt="work-one" />
+                <div class="layer">
+                  <h3>Crypto Coin web</h3>
+                  <p>
+                    The website facilitates access to information, tools, and
+                    services that enable individuals to engage with and
+                    participate in the cryptocurrency and blockchain ecosystem.
+                  </p>
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/work-2.png" alt="work-two" />
+                <div class="layer">
+                  <h3>Hotel Booking web</h3>
+                  <p>
+                    The website aims to provide a seamless and convenient
+                    experience for travelers to research, compare, and book
+                    accommodations for their trips, enhancing their overall
+                    travel planning process.
+                  </p>
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+              <div class="work">
+                <img src="images/work-3.png" alt="work-three" />
+                <div class="layer">
+                  <h3>DevOps web</h3>
+                  <p>
+                    The website aims to educate, inspire, and connect
+                    professionals interested in implementing DevOps practices
+                    within their organizations. It serves as a valuable resource
+                    hub for staying updated on the latest trends, tools, and
+                    strategies in the world of DevOps.
+                  </p>
+                  <a href="#"
+                    ><i class="fa-solid fa-arrow-up-right-from-square"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+          </div>
+        </div>
+      </section>
+
+      <!-------------------------contact---------------------->
+
+      <section>
+        <div id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="contact-left">
+                <h1 class="sub-title">Contact <span>Me</span></h1>
+                <p>
+                  <i class="fa-solid fa-square-envelope"></i
+                  >mahesh358.arc@gmail.com
+                </p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 89515 92889</p>
+                <div class="social-icons">
+                  <a href="https://twitter.com/lmBitX"
+                    ><i class="fa-brands fa-square-x-twitter"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/mahesh-chandra-n-c-7b0674204/"
+                    ><i class="fa-brands fa-linkedin"></i
+                  ></a>
+                </div>
+                <a
+                  href="./downloadable/Mahesh-Chandra-N-C-Resume.pdf"
+                  download
+                  class="btn btn2"
+                  >Download Resume</a
+                >
+              </div>
+              <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                  <input
+                    type="text"
+                    name="Name"
+                    placeholder="Your name"
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="Email"
+                    placeholder="Your email"
+                    required
+                  />
+                  <textarea
+                    name="Message"
+                    rows="6"
+                    placeholder="Your message"
+                  ></textarea>
+                  <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="copyright">
+        <p>Copyright &#169; Mahesh.</p>
+      </div>
+    </footer>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzAitG1-TJ0vtSHd8p1yCIPpy0xzRieivlqXLCX2h8tWJf0dPln8-EdZ3-eEKmj7wBdTA/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
